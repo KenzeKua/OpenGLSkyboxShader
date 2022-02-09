@@ -1,0 +1,76 @@
+﻿  geometry_utils.cpp
+  Matrix.cpp
+  Vector.cpp
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\angle_util\Vector.cpp(26,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\angle_util\Vector.cpp(65,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\angle_util\Vector.cpp(164,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  demo.cpp
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(560,53): warning C4305: '-=': truncation from 'double' to 'float'
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(561,53): warning C4305: '+=': truncation from 'double' to 'float'
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(719,16): warning C4305: '+=': truncation from 'double' to 'float'
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(801,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(808,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(810,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(817,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(819,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\shader_blur_2pass\demo.cpp(839,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+demo.obj : error LNK2019: unresolved external symbol __imp_glActiveTexture referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glAttachShader referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glBindAttribLocation referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glBindFramebuffer referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glBindRenderbuffer referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glBindTexture referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glBlendFunc referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glCheckFramebufferStatus referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glClear referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glClearColor referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glCompileShader referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glCreateProgram referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glCreateShader referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glDeleteProgram referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glDeleteShader referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glDisable referenced in function "void __cdecl loadCubemapTexture(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >,unsigned int)" (?loadCubemapTexture@@YAXV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@I@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glDisableVertexAttribArray referenced in function "void __cdecl DrawCube(unsigned int)" (?DrawCube@@YAXI@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glDrawArrays referenced in function "void __cdecl DrawCube(unsigned int)" (?DrawCube@@YAXI@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glEnable referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glEnableVertexAttribArray referenced in function "void __cdecl DrawCube(unsigned int)" (?DrawCube@@YAXI@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glFramebufferRenderbuffer referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glFramebufferTexture2D referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGenFramebuffers referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGenRenderbuffers referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGenTextures referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGetProgramiv referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGetProgramInfoLog referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGetShaderiv referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGetShaderInfoLog referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glGetUniformLocation referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glLinkProgram referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glRenderbufferStorage referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glShaderSource referenced in function "unsigned int __cdecl LoadShader(unsigned int,char const *)" (?LoadShader@@YAIIPEBD@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glTexImage2D referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glTexParameteri referenced in function "int __cdecl Init(void)" (?Init@@YAHXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glUniform1f referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glUniform1i referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glUniformMatrix4fv referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glUseProgram referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glVertexAttribPointer referenced in function "void __cdecl DrawCube(unsigned int)" (?DrawCube@@YAXI@Z)
+demo.obj : error LNK2019: unresolved external symbol __imp_glViewport referenced in function "void __cdecl Draw(void)" (?Draw@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwInit referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwTerminate referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwSetErrorCallback referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwDefaultWindowHints referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwWindowHint referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwCreateWindow referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwDestroyWindow referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwWindowShouldClose referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwPollEvents referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwGetKey referenced in function "void __cdecl UpdateCamera(void)" (?UpdateCamera@@YAXXZ)
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwSetKeyCallback referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwMakeContextCurrent referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwSwapBuffers referenced in function main
+demo.obj : error LNK2019: unresolved external symbol __imp_glfwSwapInterval referenced in function main
+D:\Download Favourites\SDK\Mali_OpenGL_ES_Emulator-v3.0.2.g694a9-Windows-32bit\libglesv2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\Download Favourites\SDK\Mali_OpenGL_ES_Emulator-v3.0.2.g694a9-Windows-32bit\libegl.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\Download Favourites\SDK\glfw-3.3.6.bin.WIN32\lib-vc2019\glfw3dll.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\KDU\[Dated] 2020-1\3D Game Programming\shader_SkyboxNSwitchShaderProgram\x64\Debug\shader_blur_2pass.exe : fatal error LNK1120: 55 unresolved externals
