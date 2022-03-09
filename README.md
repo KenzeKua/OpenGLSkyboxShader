@@ -15,4 +15,6 @@ A - Rotate left
 D - Rotate right  
 Q - Toggle bloom  
 E - Toggle colour  
+R - Zoom in  
+F - Zoom out
 1/2 - Reduce/increase the bloom strength  
