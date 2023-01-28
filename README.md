@@ -1,5 +1,7 @@
 # OpenGLSkyboxShader
-OpenGL project to showcase skybox and shader.  
+OpenGL project to showcase skybox and shader. 
+
+Itch.Io : https://caynyian.itch.io/post-processing-opengl
 
 This project is made by Kenze Kua as a student, and is non-commercial.  
 If there are any queries or questions, you may contact the owner of this repository or via kenzekua+github@gmail.com  
