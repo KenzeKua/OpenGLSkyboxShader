@@ -551,11 +551,11 @@ void UpdateCamera(void)
 				  Matrix4::rotate(cameraYaw, Vector3(1.0f, 0.0f, 0.0f)) *
 				  Matrix4::rotate(cameraPitch, Vector3(0.0f, 1.0f, 0.0f));
 
-	/*if (glfwGetKey(window, 'Q') && isGrayOut == true) isGrayOut = false;
-	else if (glfwGetKey(window, 'Q') && isGrayOut == false) isGrayOut = true;
+	/*
+	if (glfwGetKey(window, 'Q')) isGrayOut = !isGrayOut;
 
-	if (glfwGetKey(window, 'E') && isBloomOut == true) isBloomOut = false;
-	else if (glfwGetKey(window, 'E') && isBloomOut == false) isBloomOut = true;*/
+	if (glfwGetKey(window, 'E')) isBloomOut = !isBloomOut;
+	*/
 
 	if (glfwGetKey(window, '1')) highPassLimit -= 0.005;
 	if (glfwGetKey(window, '2')) highPassLimit += 0.005;
@@ -566,14 +566,12 @@ void ToggleEffects(GLFWwindow* window, int key, int scancode, int action, int mo
 	if (key == GLFW_KEY_Q && action == GLFW_PRESS)
 	{
 		isBloomOut = !isBloomOut;
-		/*if (isGrayOut)
-			isGrayOut = false;*/
+		/*isGrayOut = !isGrayOut;*/
 	}
 	if (key == GLFW_KEY_E && action == GLFW_PRESS)
 	{
 		isGrayOut = !isGrayOut;
-		/*if (isBloomOut)
-			isBloomOut = false;*/
+		/*isBloomOut = !isBloomOut;*/
 	}
 }
 
@@ -671,7 +669,7 @@ void DrawCube(GLuint texture)
 									1.0f, 0.0f,
 									1.0f, 1.0f,
 									0.0f, 1.0f,
-									// • • •
+									// Â• Â• Â•
 									0.0f, 1.0f,
 									0.0f, 0.0f,
 									1.0f, 0.0f,
@@ -685,7 +683,7 @@ void DrawCube(GLuint texture)
 									1.0f, 0.0f,
 									1.0f, 1.0f,
 									0.0f, 1.0f,
-									// • • •
+									// Â• Â• Â•
 									0.0f, 1.0f,
 									0.0f, 0.0f,
 									1.0f, 0.0f,
@@ -746,7 +744,7 @@ void Draw(void)
 	// Specify depth_renderbuffer as depth attachment
 	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, GdepthRenderbuffer);
 
-	// • • • Drawing main objects in scene • • •
+	// Â• Â• Â• Drawing main objects in scene Â• Â• Â•
 	GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
 	if (status == GL_FRAMEBUFFER_COMPLETE)
 	{
@@ -848,7 +846,7 @@ void Draw(void)
 
 		if (isGrayOut)
 		{
-			// • • • Grayscale • • •
+			// Â• Â• Â• Grayscale Â• Â• Â•
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, GfullscreenTextureGray, 0);
 
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -873,7 +871,7 @@ void Draw(void)
 			}
 			// = = = =
 
-			// • • • High pass filter • • •
+			// Â• Â• Â• High pass filter Â• Â• Â•
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, GfullscreenTextureHighpass, 0);
 
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -888,7 +886,7 @@ void Draw(void)
 			else DrawSquare(GfullscreenTextureMain);
 			// = = = = = = = =
 
-			// • • • First blur • • •
+			// Â• Â• Â• First blur Â• Â• Â•
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, GfullscreenTextureBlur1, 0);
 
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -901,7 +899,7 @@ void Draw(void)
 			DrawSquare(GfullscreenTextureHighpass);
 			// = = = = = = = =
 
-			// • • • Second blur • • •
+			// Â• Â• Â• Second blur Â• Â• Â•
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, GfullscreenTextureBlur2, 0);
 
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
